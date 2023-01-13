@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div id="text">
+            <div id="inputdiv">
+                <input type="text" name="" id="input" readonly>
+            </div>
+            <div id="outputdiv">
+                <input type="text" name="" id="output" placeholder="0" readonly>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td><button class="blue" value="(" onclick="Calculate(this.value)">(</button></td>
+                <td><button class="blue" value=")" onclick="Calculate(this.value)">)</button></td>
+                <td><button class="blue" id="ans">ans</button></td>
+                <td><button class="blue" id="del">del</button></td>
+                <td><button class="blue" id="clear">clear</button></td>
+            </tr>
+            <tr>
+                <td><button class="blue" value="7" onclick="Calculate(this.value)">7</button></td>
+                <td><button class="blue" value="8" onclick="Calculate(this.value)">8</button></td>
+                <td><button class="blue" value="9" onclick="Calculate(this.value)">9</button></td>
+                <td><button class="blue" onclick="per()">%</button></td>
+                <td><button class="blue" onclick="sqrt()">&#8730;</button></td>
+            </tr>
+            <tr>
+                <td><button class="blue" value="4" onclick="Calculate(this.value)">4</button></td>
+                <td><button class="blue" value="5" onclick="Calculate(this.value)">5</button></td>
+                <td><button class="blue" value="6" onclick="Calculate(this.value)">6</button></td>
+                <td><button class="blue" value="*" onclick="Calculate(this.value)">*</button></td>
+                <td><button class="blue" value="/" onclick="Calculate(this.value)">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="blue" value="1" onclick="Calculate(this.value)">1</button></td>
+                <td><button class="blue" value="2" onclick="Calculate(this.value)">2</button></td>
+                <td><button class="blue" value="3" onclick="Calculate(this.value)">3</button></td>
+                <td><button class="blue" value="+" onclick="Calculate(this.value)">+</button></td>
+                <td><button class="blue" value="-" onclick="Calculate(this.value)">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="blue" value="." onclick="Calculate(this.value)">.</button></td>
+                <td><button class="blue" value="0" onclick="Calculate(this.value)">0</button></td>
+                <td><button id="span" class="blue"><span>+</span><span>-</span></button></td>
+                <td colspan="2"><button id="enter" onclick="equal()">Enter</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
